@@ -301,3 +301,30 @@ figure{
     height: inherit;
     flex-wrap: inherit;
 }
+
+
+/* DESKTOP FIRST */
+@media screen and (max-width: 1024px){
+    body{
+        border: 10px solid red;
+    }
+}
+
+/* EJEMPLO MEDIA QUERY */
+@media screen and (max-width: 768px){
+    body{
+        border: 10px solid palevioletred;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        border: 10px solid forestgreen;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+        border: 10px solid yellow;
+    }
+}
