@@ -114,11 +114,15 @@ h2{
 }
 
 .proyectDetails{
-    width: 500px;
+    width: 50%;
 }
 
 .project-imageContainer{
-    width: 500px;
+    width: 50%;
+}
+
+.project-imageContainer img{
+    max-width: 100%;
 }
 
 .header {    
@@ -335,10 +339,53 @@ figure{
     .header .logo{
         text-align: center;
     }
+
+    .proyect{
+        display: block;
+    }
+
+    .project-imageContainer{
+        width: auto;
+        text-align: center;
+    }
+
+    .proyectDetails{
+        width: auto;
+        /* font-size: 16px; */
+    }
+
+    .project-name, .project-date, .experience-url{
+        margin: .3em 0;
+    }
+
+    .project-title{
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+
+    .project-url{
+        font-size: 1em;
+    }
+
+    .project-name{
+        font-size: .7em;
+    }
+
+    .project-date{
+        font-size: 1em;
+    }
+
+    .project-description{
+        font-size: .8em;
+    }
+
 }
 
 @media screen and (max-width: 480px){
-    
+    .proyectDetails{
+        width: auto;
+         font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 320px){
