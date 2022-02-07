@@ -298,6 +298,7 @@ figure{
 
 .container{
     max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -313,8 +314,27 @@ figure{
 }
 
 /* EJEMPLO MEDIA QUERY */
-@media screen and (max-width: 768px){
-    
+@media screen and (max-width: 767px){
+    .header{
+        display: block;
+        height: auto;
+    }
+
+    .header ul{
+        display: block;
+    }
+
+    .header ul li{
+        height: 50px;
+    }
+
+    .header a {
+        justify-content: center;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 480px){
