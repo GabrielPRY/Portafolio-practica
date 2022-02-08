@@ -314,7 +314,9 @@ figure{
 
 /* DESKTOP FIRST */
 @media screen and (max-width: 1024px){
-    
+    .container{
+        padding: 0 1em;
+    }
 }
 
 /* EJEMPLO MEDIA QUERY */
@@ -380,7 +382,7 @@ figure{
     }
 
     .experience{
-        width: auto;
+        width: 100%;
         flex-shrink: initial;
     }
 
@@ -396,9 +398,6 @@ figure{
          font-size: 12px;
     }
 
-    .experience{
-        width: 100%;
-    }
 
     .experienceDetail{
         /* 1em = 16px */
@@ -406,10 +405,30 @@ figure{
         /* arriba , derecha , abajo , izquierda */
         padding: 1em;
     }
+
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form-email button{
+        margin: 1em auto;
+        
+    }
+
+    .form-email h3{
+        margin-top: 0;
+    }
+
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
 }
 
 @media screen and (max-width: 320px){
-   .experience{
-       width: 100%;
-   }
+   
 }
