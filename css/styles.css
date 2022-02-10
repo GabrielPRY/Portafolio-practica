@@ -23,14 +23,13 @@ valores*/
 /*selector de id #*/
 
 /*#portafolio*/
-
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?3qn1b3');
-    src:  url('../fonts/icomoon.eot?3qn1b3#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?3qn1b3') format('truetype'),
-      url('../fonts/icomoon.woff?3qn1b3') format('woff'),
-      url('../fonts/icomoon.svg?3qn1b3#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?5zg9rh');
+    src:  url('../fonts/icomoon.eot?5zg9rh#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?5zg9rh') format('truetype'),
+      url('../fonts/icomoon.woff?5zg9rh') format('woff'),
+      url('../fonts/icomoon.svg?5zg9rh#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -51,10 +50,38 @@ valores*/
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-menu:before {
-    content: "\e9bd";
+  .icon-github:before {
+    content: "\e900";
+    margin: 0 12px 0 0;
+    font-size: 3.5em;
+    color: black;
+    display: inline-block;
   }
-  
+  .icon-instagram:before {
+    content: "\e901";
+    margin: 0 12px 0 0;
+    font-size: 3.5em;
+    color: orange;
+    display: inline-block;
+  }
+  .icon-twitter:before {
+    content: "\e902";
+    margin: 0 12px 0 0;
+    font-size: 3.5em;
+    display: inline-block;
+    color: lightskyblue;
+  }
+  .icon-facebook:before {
+    content: "\e903";
+    margin: 0 12px 0 0;
+    font-size: 3.5em;
+    display: inline-block;
+    color: blue;
+  }
+  .icon-menu:before {
+    content: "\e904";
+  }
+   
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
@@ -284,7 +311,7 @@ figure{
 
 
 
-.socialLink{
+/* .socialLink{
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -304,7 +331,7 @@ figure{
 .socialLink.Instagram{
     background-image: url('../images/instagram.png');
    
-}
+} */
 
 .form-email input{
     border-color: gray;
