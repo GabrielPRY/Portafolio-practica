@@ -394,6 +394,22 @@ figure{
     position: relative;
 }
 
+
+.burger-button{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.8);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+}
+
 /* DESKTOP FIRST */
 @media screen and (max-width: 1024px){
     .container{
@@ -425,6 +441,10 @@ figure{
 
 /* EJEMPLO MEDIA QUERY */
 @media screen and (max-width: 767px){
+
+    .burger-button{
+    display: block;
+    }
 
     .header{
         display: block;
