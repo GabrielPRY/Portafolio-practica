@@ -461,10 +461,33 @@ figure{
 
     .header a {
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
 
     .header .logo{
         text-align: center;
+    }
+
+    .menu{
+        position: fixed;
+        background: rgba(70, 66, 66, 0.8);
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .menu.isActive{
+        left: 0;
     }
 
     .proyect{
