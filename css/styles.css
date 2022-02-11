@@ -486,7 +486,7 @@ figure{
         transition: .3s;
     }
 
-    .menu.isActive{
+    .menu.is-active{
         left: 0;
     }
 
