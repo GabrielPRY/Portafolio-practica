@@ -411,7 +411,7 @@ figure{
 }
 
 /* DESKTOP FIRST */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     .container{
         padding: 0 1em;
     }
@@ -437,10 +437,23 @@ figure{
         bottom: 0;
         width: 100%;
     }
+
+    .portfolio{
+        padding: 0;
+    }
+
+    .experienceListTitle{
+        margin-left: 0;
+    }
 }
 
 /* EJEMPLO MEDIA QUERY */
 @media screen and (max-width: 767px){
+
+    h2{
+        font-size: 1.2em;
+        margin: 0.5em 0;
+    }
 
     .burger-button{
     display: block;
@@ -526,7 +539,7 @@ figure{
     }
 
     .project-description{
-        font-size: .8em;
+        font-size: 1em;
     }
 
     .experience{
@@ -543,7 +556,7 @@ figure{
 
 @media screen and (max-width: 480px){
     .proyectDetails{
-         font-size: 12px;
+         font-size: 14px;
     }
 
     h1{
