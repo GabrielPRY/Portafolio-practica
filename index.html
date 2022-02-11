@@ -164,15 +164,33 @@
         </div>
     </footer>
     <script>
-        console.log('Hola mundo! es mi primera linea en JS');
+        // console.log('Hola mundo! es mi primera linea en JS');
+
+        //resiva que llegue el mediaquery y activa para que no se ejucute codigo al pedo
+        const ipad = window.matchMedia('screen and (max-width: 767px');
 
         const menu = document.querySelector('.menu');
-        console.log(menu);
+        //console.log(menu);
         const burgerButton = document.querySelector('#burger-menu');
-        console.log(burgerButton);
+        // console.log(burgerButton);
 
-        burgerButton.addEventListener('click', hideShow)
 
+        //funcion que revisa que se cumpla un evento
+        ipad.addListener(validator)
+
+        //cuando se cumple lo de ipad salta el evento y de acuerdo al bool de matches
+        //se activa el menu hamburguesa ya hecho y si no se saca
+        function validator(event) {
+            if (event.matches == true) {
+                burgerButton.addEventListener('click', hideShow);
+                console.log(event.matches);
+            } else {
+                burgerButton.removeEventListener('click',hideShow);
+                console.log(event.matches);
+            }
+        }
+
+        //mestra y saca el menu de movil al clickear la hamburguesa
         function hideShow() {
             if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
