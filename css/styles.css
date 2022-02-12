@@ -209,6 +209,10 @@ figure{
 .header a{
     color: white;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
 }
 
 .menu{
@@ -222,13 +226,6 @@ figure{
 
 .header ul li{
     height: inherit;
-}
-
-.header a{
-    display: flex;
-    align-items: center;
-    height: inherit;
-    padding: 0 10px;
 }
 
 .footer{
